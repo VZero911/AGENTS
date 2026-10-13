@@ -1,17 +1,40 @@
-# ALICE V0 — Autonomous AI Agent
+<p align="center">
+  <img src="https://img.shields.io/badge/AGENTS-Autonomous%20Nodes-5fd38d?style=for-the-badge&labelColor=07060f" alt="AGENTS" />
+  <img src="https://img.shields.io/badge/ALICE%20V0-Powered-00ffcc?style=for-the-badge&labelColor=07060f" alt="ALICE V0" />
+  <img src="https://img.shields.io/badge/Zero%20Deps-stdlib%20only-8f6cf0?style=for-the-badge&labelColor=07060f" alt="Zero Deps" />
+</p>
 
-Public autonomous agent for V0 nodes. Zero external dependencies — runs on Python stdlib only.
+<p align="center"><b>Autonomous Public Node Agents — Zero External Dependencies</b></p>
 
-## What it does
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.12-3776ab?style=flat-square&logo=python&logoColor=white&labelColor=07060f" />
+  <img src="https://img.shields.io/badge/Docker-Ready-2496ED?style=flat-square&logo=docker&logoColor=white&labelColor=07060f" />
+  <img src="https://img.shields.io/badge/pip%20install-NONE-ea4335?style=flat-square&labelColor=07060f" />
+  <img src="https://img.shields.io/badge/Chain-31337-f2c14e?style=flat-square&labelColor=07060f" />
+  <img src="https://img.shields.io/badge/License-MIT-c0caf5?style=flat-square&labelColor=07060f" />
+</p>
 
-- **Health + status monitoring** — always-on health and status endpoints
-- **Chain sync** — connects to THESEED L0 blockchain (chain 31337), background sync loop
-- **Query endpoint** — ask ALICE about chain state, node info, uptime
-- **Task endpoint** — send tasks (sync, report)
-- **Agent logs** — access agent activity logs via API
+---
+
+## What is this?
+
+A standalone AI agent that runs on **any machine** with Python 3.12+. No `pip install`, no `requirements.txt` — pure Python stdlib only.
+
+Connects to THESEED L0 blockchain, syncs chain state, self-heals on disconnect, and exposes an HTTP API for queries and tasks.
+
+## Features
+
+- **Zero dependencies** — `http.server`, `urllib`, `json`, `threading` — that's it
+- **Chain sync** — background loop connects to L0 RPC, tracks blocks
 - **Self-healing** — auto-recovers from chain disconnects
+- **Health monitoring** — `/health` and `/status` always on
+- **Task execution** — accepts sync and report tasks via API
+- **Query endpoint** — ask the agent about chain state, node info
+- **Docker ready** — single Dockerfile, no build deps
 
-## Run with Docker
+## Run
+
+### Docker (recommended)
 
 ```bash
 docker build -t alice-agent .
@@ -23,18 +46,16 @@ docker run -d --name alice-agent \
   alice-agent
 ```
 
-## Run directly
+### Direct
 
 ```bash
 python3 alice_general.py
 ```
 
-No `pip install` needed — uses only Python stdlib.
-
 ## API
 
 | Endpoint | Method | Description |
-|----------|--------|-------------|
+|---|---|---|
 | `/health` | GET | Health check |
 | `/status` | GET | Full node status |
 | `/api/chain` | GET | Chain info (block, sync status) |
@@ -46,12 +67,20 @@ No `pip install` needed — uses only Python stdlib.
 ## Environment
 
 | Variable | Default | Description |
-|----------|---------|-------------|
+|---|---|---|
 | `ALICE_PORT` | `7781` | HTTP server port |
 | `ALICE_ROLE` | `GENERAL` | Agent role |
-| `RPC_URL` | `http://127.0.0.1:8545` | Blockchain RPC endpoint |
+| `RPC_URL` | `http://127.0.0.1:8545` | Blockchain RPC |
 | `CHAIN_ID` | `31337` | Chain ID |
 
-## License
+## Related
 
-MIT
+<p align="center">
+  <a href="https://github.com/VZero911/A.L.I.C.E"><img src="https://img.shields.io/badge/A.L.I.C.E-AI%20Framework-00ffcc?style=for-the-badge&logo=github&labelColor=07060f" alt="ALICE" /></a>
+  <a href="https://github.com/VZero911/MCP"><img src="https://img.shields.io/badge/MCP-Server-8f6cf0?style=for-the-badge&logo=github&labelColor=07060f" alt="MCP" /></a>
+  <a href="https://github.com/VZero911/THESEED"><img src="https://img.shields.io/badge/THESEED-Web3%20Game-f2c14e?style=for-the-badge&logo=github&labelColor=07060f" alt="THESEED" /></a>
+</p>
+
+---
+
+<p align="center"><i>Design By V0</i></p>
