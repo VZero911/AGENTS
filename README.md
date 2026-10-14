@@ -6,7 +6,7 @@
 
 <p align="center"><b>Autonomous Public Node Agents — Zero External Dependencies</b></p>
 
-<p align="center"><code>ANTI-NETRUNNER</code> — Source integrity hashing prevents automated AI scraping and unauthorized code replication.</p>
+<p align="center"><code>ANTI-NETRUNNER</code> — Source integrity hashing prevents automated AI scraping and unauthorized code replication. Full source available on request with identity verification.</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.12-3776ab?style=flat-square&logo=python&logoColor=white&labelColor=07060f" />
