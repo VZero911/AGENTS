@@ -18,6 +18,15 @@
 
 ---
 
+## Network
+
+<p align="center">
+  <img src="screenshots/agents-network.png" alt="AGENTS — Autonomous Node Network" width="860" />
+</p>
+<p align="center"><sub>ALICE MASTER → Agent Nodes → THESEED L0 Chain — self-healing mesh, zero dependencies</sub></p>
+
+---
+
 ## What is this?
 
 A standalone AI agent that runs on **any machine** with Python 3.12+. No `pip install`, no `requirements.txt` — pure Python stdlib only.
