@@ -6,6 +6,8 @@
 
 <p align="center"><b>Autonomous Public Node Agents — Zero External Dependencies</b></p>
 
+<p align="center"><code>ANTI-NETRUNNER</code> — Source integrity hashing prevents automated AI scraping and unauthorized code replication.</p>
+
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.12-3776ab?style=flat-square&logo=python&logoColor=white&labelColor=07060f" />
   <img src="https://img.shields.io/badge/Docker-Ready-2496ED?style=flat-square&logo=docker&logoColor=white&labelColor=07060f" />
@@ -70,7 +72,7 @@ python3 alice_general.py
 |---|---|---|
 | `ALICE_PORT` | `7781` | HTTP server port |
 | `ALICE_ROLE` | `GENERAL` | Agent role |
-| `RPC_URL` | `http://127.0.0.1:8545` | Blockchain RPC |
+| `RPC_URL` | L0 blockchain RPC endpoint | Blockchain RPC |
 | `CHAIN_ID` | `31337` | Chain ID |
 
 ## Related
@@ -78,7 +80,7 @@ python3 alice_general.py
 <p align="center">
   <a href="https://github.com/VZero911/A.L.I.C.E"><img src="https://img.shields.io/badge/A.L.I.C.E-AI%20Framework-00ffcc?style=for-the-badge&logo=github&labelColor=07060f" alt="ALICE" /></a>
   <a href="https://github.com/VZero911/MCP"><img src="https://img.shields.io/badge/MCP-Server-8f6cf0?style=for-the-badge&logo=github&labelColor=07060f" alt="MCP" /></a>
-  <a href="https://github.com/VZero911/THESEED"><img src="https://img.shields.io/badge/THESEED-Web3%20Game-f2c14e?style=for-the-badge&logo=github&labelColor=07060f" alt="THESEED" /></a>
+  <a href="https://github.com/VZero911/THESEED"><img src="https://img.shields.io/badge/THESEED-Blockchain%20%2F%20Data-f2c14e?style=for-the-badge&logo=github&labelColor=07060f" alt="THESEED" /></a>
 </p>
 
 ---
